@@ -17,3 +17,23 @@ p {
   font-family: verdana;
   font-size: 20px;
 }
+ html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f1020;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* Navigatiebalk */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      background: #151528;
+      border-bottom: 1px solid #292943;
+    }
