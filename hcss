@@ -28,7 +28,7 @@ p {
       line-height: 1.6;
     }
 
-    /* Navigatiebalk */
+    /* hmm */
     nav {
       display: flex;
       justify-content: space-between;
