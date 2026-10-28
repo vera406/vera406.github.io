@@ -1,331 +1,97 @@
 
-/* ALGEMENE INSTELLINGEN */
-* {
-    box-sizing: border-box;
+body {
+    background-color: #ffe6f0;
+    color: #333333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #f3f5fb;
-    color: #20243a;
-    line-height: 1.7;
-}
-
-a {
-    color: #6741d9;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-img {
-    max-width: 100%;
-    border-radius: 14px;
-}
-
-/* NAVIGATIE */
+/* Bovenaan de website */
 header {
-    background: #171b35;
-    color: pink;
-    padding: 18px 6%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.logo {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-nav a,
-.dropdown-button {
-    color: white;
-    font: inherit;
-    font-weight: bold;
-}
-
-nav a:hover,
-.dropdown-button:hover {
-    color: #c8b6ff;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px 0;
-}
-
-.dropdown-content {
-    
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 190px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 8px 24px #0002;
-    z-index: 10;
-    overflow: hidden;
-}
-
-.dropdown-content a {
-    display: block;
-    color: #20243a;
-    padding: 10px 15px;
-}
-
-.dropdown-content a:hover {
-    background: #eee8ff;
-    color: #6741d9;
-}
-
-.dropdown:hover .dropdown-content,
-.dropdown:focus-within .dropdown-content {
-    display: block;
-}
-
-/* GROTE INTRODUCTIE */
-.hero {
-    background: linear-gradient(135deg, #242c63, #7048d8);
-    color: white;
-    padding: 80px 8%;
+    background-color: #e6b8d0;
+    padding: 20px;
     text-align: center;
 }
 
-.hero h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    line-height: 1.2;
-    margin-bottom: 20px;
+header h1 {
+    color: #66334d;
 }
 
-.hero p {
-    max-width: 720px;
-    margin: 0 auto 25px;
-    font-size: 1.1rem;
+/* Menu */
+nav {
+    background-color: #d9a3c0;
+    padding: 12px;
+    text-align: center;
 }
 
-.hero img {
-    max-height: 300px;
-    width: 100%;
-    object-fit: cover;
-    margin-top: 25px;
-}
-
-.button {
-    display: inline-block;
-    background: #ffffff;
-    color: #5030ad;
-    padding: 12px 22px;
-    border-radius: 30px;
-    font-weight: bold;
-    margin: 8px 5px;
-}
-
-.button:hover {
-    background: #e9e1ff;
+nav a {
+    color: #4a2639;
     text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
 }
 
-/* PAGINA-INHOUD */
-.container {
-    width: min(1100px, 90%);
-    margin: 40px auto;
+nav a:hover {
+    color: white;
 }
 
-section {
-    scroll-margin-top: 25px;
-    margin-bottom: 45px;
+/* Inhoud van de pagina */
+main {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #fff7fa;
+    border-radius: 10px;
 }
 
 h2 {
-    color: #35236f;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
+    color: #a64d79;
 }
 
 h3 {
-    color: #4935a0;
-    margin-bottom: 10px;
+    color: #8f4169;
 }
 
-p {
-    margin-bottom: 15px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
-    margin: 25px 0;
-}
-
-.card {
-    background: white;
-    border-radius: 16px;
-    padding: 24px;
-    box-shadow: 0 5px 20px #20243a0d;
-    border: 1px solid #e7e8f2;
-}
-
-.card img {
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.card p:last-child {
-    margin-bottom: 0;
-}
-
-.highlight {
-    background: #e9e3ff;
-    padding: 22px;
-    border-left: 5px solid #7048d8;
-    border-radius: 10px;
-    margin: 20px 0;
-}
-
-/* VIDEO'S */
-.video {
-    background: white;
-    border-radius: 16px;
-    padding: 22px;
-    margin: 20px 0;
-    box-shadow: 0 5px 20px #20243a0d;
-}
-
-.video iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
+/* Afbeeldingen */
+img {
+    max-width: 100%;
     height: auto;
-    border: 0;
-    border-radius: 12px;
-    margin: 10px 0;
+    border-radius: 8px;
 }
 
-/* KLEURVOORBEELDEN */
-.color-boxes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin: 20px 0;
+/* Video's */
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
 }
 
-.color-box {
-    min-height: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    border-radius: 12px;
-    text-shadow: 0 1px 4px #0008;
+/* Kleine gekleurde blokken */
+section {
+    margin-bottom: 30px;
 }
 
-.red {
-    background: #ef4444;
-}
-
-.green {
-    background: #22a06b;
-}
-
-.blue {
-    background: #3568e8;
-}
-
-/* BINARIRE VOORBEELDEN */
-.binary {
-    background: #10162b;
-    color: #8cffc1;
-    font-family: monospace;
-    font-size: 1.3rem;
-    padding: 22px;
-    border-radius: 12px;
-    overflow-wrap: anywhere;
-    margin: 15px 0;
-}
-
-/* ARTIKEL */
-.article {
-    background: white;
-    padding: 28px;
-    border-radius: 16px;
-    border-top: 5px solid #7048d8;
-}
-
-/* AFBEELDING MET BIJSCHRIFT */
-figure {
-    margin: 20px 0;
-}
-
-figcaption {
-    color: #656980;
-    font-size: 0.9rem;
-    margin-top: 7px;
-}
-
-/* VOETTEKST */
+/* Onderaan de website */
 footer {
-    background: #171b35;
-    color: white;
-    padding: 28px 6%;
+    background-color: #e6b8d0;
     text-align: center;
-    margin-top: 50px;
+    padding: 15px;
+    color: #66334d;
 }
 
-footer p {
-    margin: 0;
-}
-
-/* MOBIELE TELEFOONS */
+/* Voor kleine schermen */
 @media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    nav a {
+        display: inline-block;
+        margin: 6px;
     }
 
-    nav {
-        gap: 12px;
-    }
-
-    .hero {
-        padding: 55px 6%;
-    }
-
-    .container {
-        width: 92%;
-    }
-
-    .color-boxes {
-        grid-template-columns: 1fr;
+    main {
+        margin: 15px;
+        padding: 15px;
     }
 }
-
 
