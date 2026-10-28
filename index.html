@@ -1,18 +1,98 @@
-<!DOCTYPE html> <!--Dit is de homepage van mijn site-->
-<html> <!--Dit is het html element-->
-     <head>
-       <title>Hier komt mijn tweede tekst</title> 
-       <link rel="stylesheet" type="text/css" href="opmaak.css"> 
-        <meta charset="utf-8">
-        </head>
-        <body>
-                Hier komt mijn tweede tekst
-                
-                <ul>
-                    <il><a href="binairstelsel.html">Dit is mijn link</a></il>
-                    <il><a href="index.html">index.html</a></il>
-                    <il><a href="kleurmodellen.html">kleurenmodellen</a></il>
-            </ul>
-                
-        </body>   
-</html>            
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Mijn digitale wereld</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">Mijn digitale wereld</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropdown-button">Computer ▾</button>
+            <div class="dropdown-content">
+                <a href="computer.html#invoer">Invoer en uitvoer</a>
+                <a href="computer.html#binair">Binair stelsel</a>
+                <a href="computer.html#kleur">Kleurmodellen</a>
+                <a href="computer.html#compressie">Compressie</a>
+            </div>
+        </div>
+        <a href="ai.html">AI</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Welkom op mijn website!</h1>
+    <p>
+        Ontdek hoe computers werken, hoe digitale afbeeldingen
+        worden gemaakt en hoe kunstmatige intelligentie ons leven
+        verandert.
+    </p>
+    <a class="button" href="computer.html">Ontdek de computer</a>
+    <a class="button" href="ai.html">Ontdek AI</a>
+    <img
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+        alt="Laptop en digitale technologie">
+</div>
+
+<main class="container">
+    <section>
+        <h2>Over mij</h2>
+        <div class="card">
+            <p>
+                Hoi! Ik ben [jouw naam] en ik zit op [jouw school].
+                In mijn vrije tijd houd ik van [jouw hobby's].
+            </p>
+            <p>
+                Ik vind technologie interessant omdat computers
+                en telefoons een grote rol spelen in ons dagelijks
+                leven. Op deze website vertel ik wat ik heb geleerd
+                over computers, digitale afbeeldingen en AI.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Wat kun je hier vinden?</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Computers</h3>
+                <p>
+                    Leer hoe een computer gegevens invoert,
+                    verwerkt en uitvoert.
+                </p>
+                <a href="computer.html">Lees meer →</a>
+            </div>
+
+            <div class="card">
+                <h3>Digitale afbeeldingen</h3>
+                <p>
+                    Ontdek het binaire stelsel, kleurmodellen
+                    en het verschil tussen bitmap en vector.
+                </p>
+                <a href="computer.html#kleur">Bekijk de onderwerpen →</a>
+            </div>
+
+            <div class="card">
+                <h3>Kunstmatige intelligentie</h3>
+                <p>
+                    Ontdek hoe AI werkt en hoe ik AI zelf gebruik.
+                </p>
+                <a href="ai.html">Lees over AI →</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Mijn digitale wereld | Gemaakt door [jouw naam]</p>
+</footer>
+
+</body>
+</html>
+       
