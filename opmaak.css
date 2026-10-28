@@ -1,6 +1,6 @@
 
 body {
-    background-color: #ffe6f0;
+    background-color: pink;
     color: #333333;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -41,7 +41,7 @@ main {
     max-width: 850px;
     margin: 25px auto;
     padding: 20px;
-    background-color: #fff7fa;
+    background-color: pink;
     border-radius: 10px;
 }
 
