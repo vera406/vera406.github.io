@@ -34,7 +34,7 @@ img {
 /* NAVIGATIE */
 header {
     background: #171b35;
-    color: white;
+    color: pink;
     padding: 18px 6%;
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@ nav a:hover,
 }
 
 .dropdown-content {
-    display: none;
+    display: ;
     position: absolute;
     top: 100%;
     left: 0;
